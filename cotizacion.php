@@ -11,6 +11,7 @@ if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
+$Id_Datos = $_POST['Id_Datos'];
 $nom = $_POST['nom'];
 $correo = $_POST['correo'];
 $modelo = $_POST['modelo'];
