@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JJLCAR - Login / Registro</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0A0D3A;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #1A1F5A;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      width: 350px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: white;
+      color: #0A0D3A;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #ccc;
+    }
+
+    .toggle-link {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      color: #ccc;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <!-- Formulario de Login -->
+    <form id="login-form" action="login.php" method="POST">
+      <h2>Iniciar Sesión</h2>
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <input type="password" name="password" placeholder="Contraseña" required />
+      <button type="submit">Entrar</button>
+      <span class="toggle-link" onclick="mostrarRegistro()">¿No tienes cuenta? Regístrate aquí</span>
+    </form>
+
+    <!-- Formulario de Registro (inicialmente oculto) -->
+    <form id="registro-form" action="registro.php" method="POST" style="display:none;">
+      <h2>Registrarse</h2>
+      <input type="text" name="nombre" placeholder="Nombre completo" required />
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <input type="password" name="password" placeholder="Contraseña" required />
+      <button type="submit">Crear Cuenta</button>
+      <span class="toggle-link" onclick="mostrarLogin()">¿Ya tienes cuenta? Inicia sesión</span>
+    </form>
+  </div>
+
+  <script>
+    function mostrarRegistro() {
+      document.getElementById("login-form").style.display = "none";
+      document.getElementById("registro-form").style.display = "block";
+    }
+
+    function mostrarLogin() {
+      document.getElementById("registro-form").style.display = "none";
+      document.getElementById("login-form").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

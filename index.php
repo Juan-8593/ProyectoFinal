@@ -16,7 +16,8 @@
   <a href="#vehiculos">Vehículos</a>
   <a href="#cotizacion">Cotización</a>
   <a href="#faq">Preguntas Frecuentes</a>
-  <a href="#login">Login / Registrarse</a>
+  <a href="registro_login.html">Login / Registrarse</a>
+
 </nav>
 
   <?php include 'header.php'; ?>
