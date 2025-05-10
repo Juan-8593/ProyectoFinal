@@ -9,14 +9,14 @@
 <body>
 <header>
   <img src="img/logo.jpg" alt="JJLCAR Logo" class="logo">
-  <h1>JJLCAR - Tienda de Carros</h1>
+  <h1>JJLCAR'S</h1>
 </header>
 
 <nav>
   <a href="#vehiculos">Vehículos</a>
   <a href="#cotizacion">Cotización</a>
   <a href="#faq">Preguntas Frecuentes</a>
-  <a href="registro_login.html">Login / Registrarse</a>
+  <a href="registro_login.html">Iniciar Sesion</a>
 
 </nav>
 
@@ -61,15 +61,3 @@
     <p><strong>¿Qué documentos necesito?</strong><br> Identificación persona, comprobante de domicilio y comprobante de ingresos.</p>
   </section>
 
-  <section id="login">
-    <h2>Login / Registrarse</h2>
-    <form action="login.php" method="POST">
-      <input type="email" name="email" placeholder="Correo electrónico" required>
-      <input type="password" name="password" placeholder="Contraseña" required>
-      <button type="submit">Iniciar Sesión</button>
-    </form>
-    <p>¿No tienes cuenta? <a href="#" style="color:#ccc;">Regístrate aquí</a></p>
-  </section>
-
-</body>
-</html>

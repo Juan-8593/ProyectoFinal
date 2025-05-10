@@ -20,13 +20,13 @@ body {
   nav {
     display: flex;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: #4A6FA5;
     padding: 12px 0;
     border-bottom: 2px solid #DCE3EB;
   }
   
   nav a {
-    color: #2C2C2C;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 25px;
     font-weight: 600;
@@ -34,7 +34,7 @@ body {
   }
   
   nav a:hover {
-    color: #4A6FA5;
+    color: #DCE3EB;
   }
   
   section {
@@ -76,14 +76,14 @@ body {
   form {
     max-width: 420px;
     margin: 0 auto;
-    background-color: #FFFFFF;
+    background-color: #4A6FA5;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   }
-  
+  /* formulario cotizacion */
   input, select, textarea {
-    width: 100%;
+    width: 85%;
     padding: 12px;
     margin-top: 12px;
     margin-bottom: 20px;
