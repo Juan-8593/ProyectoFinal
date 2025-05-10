@@ -20,23 +20,22 @@
 
 </nav>
 
-  <?php include 'header.php'; ?>
 
   <section id="vehiculos">
     <h2>Vehículos Disponibles</h2>
     <div class="vehiculos-container">
       <div class="card">
-        <img src="https://via.placeholder.com/250x150?text=Carro+1" alt="Carro 1">
+        <img src="" alt="Carro 1">
         <h3>Modelo A</h3>
         <p>Precio: Q.0</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/250x150?text=Carro+2" alt="Carro 2">
+        <img src="" alt="Carro 2">
         <h3>Modelo B</h3>
         <p>Precio: Q.0</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/250x150?text=Carro+3" alt="Carro 3">
+        <img src="" alt="Carro 3">
         <h3>Modelo C</h3>
         <p>Precio: Q.0</p>
       </div>
@@ -44,20 +43,16 @@
   </section>
 
   <section id="cotizacion">
-    <h2>Solicita una Cotización</h2>
-    <form action="cotizar.php" method="POST">
-      <input type="text" name="nombre" placeholder="Nombre completo" required>
-      <input type="email" name="correo" placeholder="Correo electrónico" required>
-      <select name="modelo" required>
-        <option value="">Selecciona un modelo</option>
-        <option>Modelo A</option>
-        <option>Modelo B</option>
-        <option>Modelo C</option>
-      </select>
-      <textarea name="comentarios" placeholder="Comentarios adicionales"></textarea>
-      <button type="submit">Enviar Cotización</button>
-    </form>
-  </section>
+  <h2>Solicita una Cotización</h2>
+  <form action="cotizacion.php" method="POST">
+  <input type="nom" name="nom" placeholder="Ingresa tu nombre" required>
+    <input type="email" name="correo" placeholder="Tu correo" required>
+    <input type="text" name="modelo" placeholder="Modelo de vehículo" required>
+    <textarea name="comentarios" placeholder="Comentarios adicionales" rows="4"></textarea>
+    <button type="submit">Enviar Cotización</button>
+  </form>
+</section>
+
 
   <section id="faq">
     <h2>Preguntas Frecuentes</h2>
